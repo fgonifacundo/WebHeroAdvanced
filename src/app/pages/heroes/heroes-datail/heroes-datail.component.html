@@ -1,0 +1,25 @@
+<div class="container" style="padding-top: 30px;">
+
+  <div class="media"  *ngIf="heroe else nodata">
+    <div class="media-left">
+      <a href="#">
+        <img class="media-object" [src]="heroe.Img" alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">{{heroe.Nombre}}</h4>
+      {{heroe.Descripcion}}
+    </div>
+  </div>
+
+  <ng-template #nodata>
+      <div class="alert alert-danger">
+          El Heroe No Existe!
+        </div>
+  </ng-template>
+ 
+
+
+
+
+</div>
